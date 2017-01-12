@@ -20,7 +20,10 @@ from process import views as process_veiws
 import process
 
 process_urlpatterns = [
-    url(r'^hello/$', process_veiws.hello)
+    url(r'^hello/$', process_veiws.hello),
+    url(r'add/$', process_veiws.add_user),
+    url(r'delete/all/$', process_veiws.delete_all_users),
+    url(r'get/all/$', process_veiws.get_all_users),
 ]
 
 urlpatterns = [
